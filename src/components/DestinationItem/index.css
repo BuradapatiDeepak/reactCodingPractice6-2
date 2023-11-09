@@ -1,0 +1,15 @@
+/* Write your CSS here */
+
+.image {
+  height: 50%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.heading {
+  font-size: 22px;
+}
