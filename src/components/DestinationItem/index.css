@@ -1,13 +1,16 @@
 /* Write your CSS here */
 
 .image {
-  height: 50%;
-  width: 50%;
-  border-radius: 5px;
+  width: 235px;
+  height: 175px;
 }
 
 .item {
   list-style-type: none;
+  width: 235px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 32px;
 }
 
 .heading {
