@@ -1,32 +1,45 @@
 /* Write your CSS here */
 
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  max-width: 1140px;
 }
 
 .input-container {
   display: flex;
-  flex-direction: row;
   background-color: #f1f5f9;
-  padding: 5px;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  margin-left: 15px;
 }
 
-.image {
+.image1 {
   width: 20px;
+  height: 20px;
 }
 
 .inputElement {
-  border-width: 0px;
+  font-size: 14px;
+  border: none;
   background-color: #f1f5f9;
+  outline: none;
 }
 
 .list-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 48px;
 }
