@@ -21,26 +21,28 @@ class DestinationSearch extends Component {
     )
 
     return (
-      <div className="container">
-        <h1>Destination Search</h1>
-        <div className="input-container">
-          <input
-            className="inputElement"
-            type="search"
-            onChange={this.searchKeyword}
-            placeholder="Search"
-          />
-          <img
-            className="image"
-            alt="search icon"
-            src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
-          />
+      <div className="app-container">
+        <div className="container">
+          <h1>Destination Search</h1>
+          <div className="input-container">
+            <input
+              className="inputElement"
+              type="search"
+              onChange={this.searchKeyword}
+              placeholder="Search"
+            />
+            <img
+              className="image1"
+              alt="search icon"
+              src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+            />
+          </div>
+          <ul className="list-container">
+            {searchList.map(eachItem => (
+              <DestinationItem searchList={eachItem} key={eachItem.id} />
+            ))}
+          </ul>
         </div>
-        <ul className="list-container">
-          {searchList.map(eachItem => (
-            <DestinationItem searchList={eachItem} key={eachItem.id} />
-          ))}
-        </ul>
       </div>
     )
   }
